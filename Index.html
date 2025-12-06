@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElevenLabs Text to Speech</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-50 text-gray-800">
+
+  <!-- Header / Navbar -->
+  <header class="bg-blue-600 text-white shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">ElevenLabs Text to Speech</h1>
+      <nav class="space-x-4 hidden md:flex">
+        <a href="#tools" class="hover:underline">Tools</a>
+        <a href="#image-tools" class="hover:underline">Image Tools</a>
+        <a href="#custom-voice" class="hover:underline">Custom Voice</a>
+      </nav>
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" /></svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+      <a href="#tools" class="block py-1">Tools</a>
+      <a href="#image-tools" class="block py-1">Image Tools</a>
+      <a href="#custom-voice" class="block py-1">Custom Voice</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-500 text-white py-20 px-4 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Convert Text to Voice Instantly</h2>
+    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Experience fast, high-quality text-to-speech from multiple platforms including ElevenLabs, Cartesia, and Google AI.</p>
+    <a href="#tools" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">Get Started</a>
+  </section>
+
+  <!-- Tools Section -->
+  <section id="tools" class="max-w-7xl mx-auto py-16 px-4">
+    <h3 class="text-3xl font-bold mb-8 text-center">Available Tools</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- ElevenLabs TTS -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="font-bold text-xl mb-2">ElevenLabs Text to Speech</h4>
+        <p class="text-gray-600 mb-4">High-quality voice generation with ElevenLabs API.</p>
+        <a href="#" class="text-blue-600 font-semibold hover:underline">Open Tool</a>
+      </div>
+
+      <!-- Cartesia TTS -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="font-bold text-xl mb-2">Cartesia Text to Speech</h4>
+        <p class="text-gray-600 mb-4">Generate natural voice with Cartesia AI.</p>
+        <a href="#" class="text-blue-600 font-semibold hover:underline">Open Tool</a>
+      </div>
+
+      <!-- Google AI TTS -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="font-bold text-xl mb-2">Google AI Text to Speech</h4>
+        <p class="text-gray-600 mb-4">Fast and versatile voice generation powered by Google AI.</p>
+        <a href="#" class="text-blue-600 font-semibold hover:underline">Open Tool</a>
+      </div>
+
+      <!-- Custom Voice ID -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="font-bold text-xl mb-2">Custom Voice ID</h4>
+        <p class="text-gray-600 mb-4">Paste your ElevenLabs or Cartesia voice ID to generate custom voices.</p>
+        <a href="#" class="text-blue-600 font-semibold hover:underline">Open Tool</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Tools Section -->
+  <section id="image-tools" class="bg-blue-100 py-16 px-4">
+    <h3 class="text-3xl font-bold mb-8 text-center">Image Tools</h3>
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-gray-700 mb-4">Coming soon: AI-based image generation, editing, and enhancement tools.</p>
+      <a href="#" class="bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-600 transition">Explore Image Tools</a>
+    </div>
+  </section>
+
+  <!-- Custom Voice Section -->
+  <section id="custom-voice" class="max-w-3xl mx-auto py-16 px-4">
+    <h3 class="text-3xl font-bold mb-6 text-center">Generate Voice with Custom ID</h3>
+    <p class="text-gray-700 mb-6 text-center">Simply paste your ElevenLabs or Cartesia Voice ID or link and generate high-quality TTS instantly.</p>
+    <form class="flex flex-col md:flex-row gap-4 justify-center">
+      <input type="text" placeholder="Paste Voice ID or link" class="p-3 rounded-lg border border-gray-300 flex-1">
+      <button type="submit" class="bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-600 transition">Generate</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-6 text-center">
+    <p>&copy; 2025 ElevenLabs Text to Speech. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
